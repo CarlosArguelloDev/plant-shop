@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lirio del Valle — Plantas de interior y exterior seleccionadas a mano. Lleva vida, textura y color fresco a tu espacio con nuestras plantas premium." />
+  <title>Lirio del Valle — Plantas para tu espacio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="images/logo.png" alt="Lirio del Valle Logo" class="brand-logo" />
+        Lirio del <span>Valle</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#plantas">Plantas</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#cuidados">Cuidados</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Carrito de compras">
+          🛍
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <a href="#plantas" class="btn btn-primary" style="padding:10px 22px;font-size:.85rem;">Comprar ahora</a>
+        <button class="hamburger" id="hamburger" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-menu" id="closeMenu">✕</button>
+    <a href="#plantas" onclick="closeMobileMenu()">Plantas</a>
+    <a href="#nosotros" onclick="closeMobileMenu()">Nosotros</a>
+    <a href="#cuidados" onclick="closeMobileMenu()">Cuidados</a>
+    <a href="#blog" onclick="closeMobileMenu()">Blog</a>
+    <a href="#plantas" class="btn btn-primary" onclick="closeMobileMenu()">Comprar ahora</a>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="container hero-content animate-up">
+      <div class="hero-eyebrow">
+        <div class="eyebrow-line"></div>
+        <span class="eyebrow-text">Colección Primavera 2026</span>
+      </div>
+      <h1 class="hero-title">
+        Trae la<br/>
+        <em>naturaleza</em><br/>
+        a tu hogar
+      </h1>
+      <p class="hero-subtitle">
+        Plantas seleccionadas a mano para cada rincón de tu espacio. Frescas, saludables y listas para crecer contigo.
+      </p>
+      <div class="hero-actions">
+        <a href="#plantas" class="btn btn-primary">
+          Explorar plantas
+          <span>→</span>
+        </a>
+        <a href="#nosotros" class="btn btn-outline">Conoce más</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-value">200+</div>
+          <div class="stat-label">Especies únicas</div>
+        </div>
+        <div>
+          <div class="stat-value">12k</div>
+          <div class="stat-label">Clientes felices</div>
+        </div>
+        <div>
+          <div class="stat-value">98%</div>
+          <div class="stat-label">Satisfacción</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-img-wrap">
+        <img src="images/hero.png" alt="Colección de plantas de interior en macetas blancas" />
+        <div class="hero-img-overlay"></div>
+      </div>
+    </div>
+    <div class="hero-scroll" style="opacity: 1; animation: none;">
+      <div class="hero-badge" id="heroBadge" style="position: static; animation: float 3s ease-in-out infinite; box-shadow: var(--shadow-sm); padding: 12px 20px;">
+        <div class="badge-icon" style="font-size: 1.5rem;">🚚</div>
+        <div class="badge-text" style="text-align: left;">
+          <strong>Envío gratis</strong>
+          <span>en compras > $499</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURES ── -->
+  <section class="features" id="nosotros">
+    <div class="container">
+      <div class="section-header animate-up">
+        <div class="tag">✦ Por qué elegirnos</div>
+        <h2 class="section-title">Diseñado para ti y tus plantas</h2>
+        <p class="section-desc">Nos obsesionamos con cada detalle para que recibas una planta perfecta y la cuides con confianza.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card animate-up">
+          <div class="feature-icon">🌱</div>
+          <h3>Selección Premium</h3>
+          <p>Cada planta pasa por una revisión de calidad antes de llegar a ti. Solo enviamos ejemplares sanos, fuertes y llenos de vida.</p>
+        </div>
+        <div class="feature-card animate-up" style="transition-delay:.1s">
+          <div class="feature-icon">🪴</div>
+          <h3>Macetas de Diseño</h3>
+          <p>Combinamos plantas con macetas modernas y minimalistas para que luzcan perfectas en cualquier espacio de tu hogar u oficina.</p>
+        </div>
+        <div class="feature-card animate-up" style="transition-delay:.2s">
+          <div class="feature-icon">📚</div>
+          <h3>Guía de Cuidados</h3>
+          <p>Cada orden incluye una tarjeta personalizada con instrucciones detalladas de riego, luz y fertilización para tu planta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRODUCTS ── -->
+  <section class="products" id="plantas">
+    <div class="container">
+      <div class="section-header animate-up">
+        <div class="tag">🌿 Colección</div>
+        <h2 class="section-title">Plantas para cada estilo</h2>
+        <p class="section-desc">Desde suculentas de bajo mantenimiento hasta exuberantes tropicales, encuentra la planta ideal para ti.</p>
+      </div>
+      <div class="products-filter animate-up">
+        <button class="filter-btn active" id="filterAll" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="interior">Interior</button>
+        <button class="filter-btn" data-filter="suculenta">Suculentas</button>
+        <button class="filter-btn" data-filter="tropical">Tropicales</button>
+        <button class="filter-btn" data-filter="helecho">Helechos</button>
+      </div>
+      <div class="products-grid" id="productsGrid">
+
+        <!-- Product 1 -->
+        <div class="product-card animate-up" data-category="tropical">
+          <div class="product-img-wrap">
+            <img src="images/monstera.png" alt="Monstera Deliciosa" loading="lazy" />
+            <span class="product-badge-new">Nuevo</span>
+            <button class="product-action" aria-label="Favorito" title="Agregar a favoritos">🤍</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Tropical • Interior</div>
+            <div class="product-name">Monstera Deliciosa</div>
+            <div class="product-care">☀️ Luz indirecta · 💧 Semanal</div>
+            <div class="product-footer">
+              <div class="product-price">$349</div>
+              <button class="add-btn" aria-label="Agregar al carrito" onclick="addToCart()">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card animate-up" data-category="suculenta" style="transition-delay:.08s">
+          <div class="product-img-wrap">
+            <img src="images/succulent.png" alt="Arreglo de suculentas" loading="lazy" />
+            <span class="product-badge-sale">−20%</span>
+            <button class="product-action" aria-label="Favorito" title="Agregar a favoritos">🤍</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Suculenta • Exterior</div>
+            <div class="product-name">Mix de Suculentas</div>
+            <div class="product-care">☀️ Luz directa · 💧 Quincenal</div>
+            <div class="product-footer">
+              <div class="product-price"><span class="original">$199</span>$159</div>
+              <button class="add-btn" aria-label="Agregar al carrito" onclick="addToCart()">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card animate-up" data-category="interior" style="transition-delay:.16s">
+          <div class="product-img-wrap">
+            <img src="images/pothos.png" alt="Pothos dorado" loading="lazy" />
+            <button class="product-action" aria-label="Favorito" title="Agregar a favoritos">🤍</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Interior • Colgante</div>
+            <div class="product-name">Pothos Dorado</div>
+            <div class="product-care">🌤 Luz media · 💧 Semanal</div>
+            <div class="product-footer">
+              <div class="product-price">$189</div>
+              <button class="add-btn" aria-label="Agregar al carrito" onclick="addToCart()">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card animate-up" data-category="helecho" style="transition-delay:.24s">
+          <div class="product-img-wrap">
+            <img src="images/fern.png" alt="Helecho de Boston" loading="lazy" />
+            <span class="product-badge-new">Popular</span>
+            <button class="product-action" aria-label="Favorito" title="Agregar a favoritos">🤍</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Helecho • Humedad alta</div>
+            <div class="product-name">Helecho de Boston</div>
+            <div class="product-care">🌥 Sombra parcial · 💧 2x semana</div>
+            <div class="product-footer">
+              <div class="product-price">$289</div>
+              <button class="add-btn" aria-label="Agregar al carrito" onclick="addToCart()">+</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SEASONAL BANNER ── -->
+  <section class="seasonal" id="cuidados">
+    <div class="container seasonal-inner">
+      <div>
+        <div class="seasonal-tag">🌸 Oferta de Temporada</div>
+        <h2 class="seasonal-title">Primavera en tu sala.<br />30% off en todo.</h2>
+        <p class="seasonal-desc">Celebra la estación más vibrante con plantas que transforman cualquier espacio. Oferta válida del 20 al 31 de marzo de 2026.</p>
+        <div class="seasonal-actions">
+          <a href="#plantas" class="btn btn-ghost">Ver ofertas →</a>
+          <a href="#newsletter" class="btn" style="background:rgba(255,255,255,.1);color:#fff;border:1.5px solid rgba(255,255,255,.2);">Recibir alertas</a>
+        </div>
+      </div>
+      <div class="seasonal-visual">🌸</div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ── -->
+  <section class="testimonials" id="blog">
+    <div class="container">
+      <div class="section-header animate-up">
+        <div class="tag">💬 Reseñas</div>
+        <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+        <p class="section-desc">Más de 12,000 personas ya llenan sus hogares con vida. Aquí comparten su experiencia.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card animate-up">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"Mi Monstera llegó increíblemente sana y mucho más grande de lo que esperaba. El empaque fue perfecto y la guía de cuidados fue de gran ayuda para mí como principiante."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">S</div>
+            <div>
+              <div class="author-name">Sofía Ramírez</div>
+              <div class="author-tag">Compradora verificada · Ciudad de México</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-up" style="transition-delay:.1s">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"Llevo seis meses comprando aquí y cada planta ha superado mis expectativas. El servicio al cliente es excepcional y los envíos siempre son rápidos y seguros."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">A</div>
+            <div>
+              <div class="author-name">Andrés Morales</div>
+              <div class="author-tag">Comprador verificado · Guadalajara</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-up" style="transition-delay:.2s">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"Transformé completamente mi departamento con plantas de Verdeflor. Las macetas son preciosas y combinan perfectamente con la decoración moderna de mi hogar."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">V</div>
+            <div>
+              <div class="author-name">Valentina Cruz</div>
+              <div class="author-tag">Compradora verificada · Monterrey</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── NEWSLETTER ── -->
+  <section class="newsletter" id="newsletter">
+    <div class="container newsletter-inner">
+      <div class="animate-up">
+        <div class="tag">📧 Newsletter</div>
+        <h2 class="newsletter-title">Plantas e inspiración directo a tu correo</h2>
+        <p class="newsletter-desc">Únete a más de 8,000 amantes de las plantas. Recibe consejos de cuidado, descuentos exclusivos y novedades de la colección.</p>
+      </div>
+      <div class="animate-up" style="transition-delay:.1s">
+        <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+          <div class="newsletter-input-wrap">
+            <input
+              type="email"
+              id="emailInput"
+              placeholder="tu@correo.com"
+              required
+              aria-label="Tu correo electrónico"
+            />
+            <button type="submit" class="btn btn-primary" style="padding:12px 24px;font-size:.85rem;">
+              Suscribirme
+            </button>
+          </div>
+          <div class="newsletter-benefits">
+            <div class="benefit">
+              <span class="benefit-icon">🎁</span>
+              <span>10% off en tu primera compra</span>
+            </div>
+            <div class="benefit">
+              <span class="benefit-icon">🔒</span>
+              <span>Sin spam, te lo prometemos</span>
+            </div>
+          </div>
+        </form>
+        <div id="newsletterSuccess" style="display:none;margin-top:16px;padding:16px 20px;background:var(--green-50);border:1px solid var(--green-100);border-radius:12px;color:var(--green-800);font-size:.9rem;font-weight:500;">
+          🌿 ¡Bienvenido/a a la familia Lirio del Valle! Tu 10% de descuento llegará en breve.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <img src="images/logo.png" alt="Lirio del Valle Logo" class="brand-logo" />
+            Lirio del <span>Valle</span>
+          </a>
+          <p>Llevamos naturaleza a tu hogar desde 2019. Cada planta cultivada con amor y enviada con cuidado.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">📸</a>
+            <a href="#" class="social-link" aria-label="Pinterest">📌</a>
+            <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+            <a href="#" class="social-link" aria-label="Facebook">👤</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Tienda</div>
+          <ul class="footer-links">
+            <li><a href="#plantas">Plantas de interior</a></li>
+            <li><a href="#plantas">Plantas de exterior</a></li>
+            <li><a href="#plantas">Suculentas</a></li>
+            <li><a href="#plantas">Macetas & Accesorios</a></li>
+            <li><a href="#plantas">Kits regalo</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Ayuda</div>
+          <ul class="footer-links">
+            <li><a href="#">Guía de cuidados</a></li>
+            <li><a href="#">Envíos y entregas</a></li>
+            <li><a href="#">Devoluciones</a></li>
+            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Contacto</div>
+          <ul class="footer-links">
+            <li><a href="mailto:hola@verdeflor.mx">hola@verdeflor.mx</a></li>
+            <li><a href="tel:+525512345678">+52 55 1234 5678</a></li>
+            <li><a href="#">Ciudad de México, MX</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Lirio del Valle. Todos los derechos reservados.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacidad</a>
+          <a href="#">Términos</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div id="toast" style="
+    position:fixed; bottom:32px; right:32px; z-index:999;
+    background:var(--green-800); color:#fff;
+    padding:14px 22px; border-radius:12px;
+    font-size:.9rem; font-weight:500;
+    box-shadow:0 8px 32px rgba(0,0,0,.2);
+    transform:translateY(120px); opacity:0;
+    transition:all .4s cubic-bezier(.4,0,.2,1);
+    pointer-events:none;
+    display:flex; gap:10px; align-items:center;
+  "></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
